@@ -1,4 +1,5 @@
 import { app } from "../scripts/app.js";
+import {ComfyWidgets} from "../scripts/widgets.js"
 
 function indexWidget(node, inputName, inputData) {
 	const index = ComfyWidgets.INT(node, inputName, inputData);
@@ -18,7 +19,7 @@ function indexWidget(node, inputName, inputData) {
 }
 
 export const IncrementalWidgets = {
-        "INT:seed": indexWidget,
+        "INT:index": indexWidget,
 }
 
 const ext = {
